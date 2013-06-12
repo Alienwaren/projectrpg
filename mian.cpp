@@ -5,6 +5,11 @@
 
 using namespace std;
 using namespace sf;
+void zaladuj_grafiki()
+{
+
+
+}
 int main()
 {
 	Window oknoGlowne(VideoMode(800,600), "Okno glowne");
@@ -19,7 +24,7 @@ int main()
 				oknoGlowne.close();
 			}
 		}
-
+		
 		oknoGlowne.display();
 	}
 	
