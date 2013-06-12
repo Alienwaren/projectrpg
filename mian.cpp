@@ -5,11 +5,17 @@
 
 using namespace std;
 using namespace sf;
+
 int main()
 {
 	Texture kostur;
 	kostur.setSmooth(true);
-	if(!kostur.loadFromFile("staff.jpg"))
+	bool narysowano[15];
+	for(int i = 0; i < 15; i++)
+	{
+		narysowano[i] = false;
+	}
+	if(!kostur.loadFromFile("staff.png"))
 	{
 		cout << "Nie moge zaladowac pliku";
 	}
@@ -30,16 +36,26 @@ int main()
 	Event zdarzenia;
 	while(oknoGlowne.isOpen())
 	{
+		
 		while(oknoGlowne.pollEvent(zdarzenia))
 		{
 			if(zdarzenia.type == Event::Closed)
 			{
 				oknoGlowne.close();
 			}
+			if(Keyboard::isKeyPressed(Keyboard::K))
+			{
+				oknoGlowne.clear(Color::Black);
+				oknoGlowne.draw(snake_s);
+				oknoGlowne.display();
+			}
+			if(Keyboard::isKeyPressed(Keyboard::D))
+			{
+				
+			}
 		}
-		oknoGlowne.clear(Color::Black);
-		oknoGlowne.draw(kostur_s);
-		oknoGlowne.draw(snake_s);
+		
+		
 		oknoGlowne.display();
 	}
 	

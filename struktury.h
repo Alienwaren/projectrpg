@@ -1,5 +1,6 @@
 #ifndef _H_STRUKTURY_
 #define _H_STRUKTURY_
+
 struct helm
 {
 	int def;
@@ -24,5 +25,12 @@ struct postac
 
 
 }GRACZ_1;
+struct wrog
+{
+	double zycie;
+	float atk_spd;
+	double obrazenia;
+
+}snake_e;
 
 #endif
