@@ -2,12 +2,15 @@
 #include <SFML\System.hpp>
 #include <SFML\Window.hpp>
 #include <SFML\Graphics.hpp>
+#include "struktury.h"
 
 using namespace std;
 using namespace sf;
-
 int main()
 {
+	snake_e.atk_spd = 0.5f;
+	snake_e.zycie = 30;
+	snake_e.obrazenia = 10;
 	Texture kostur;
 	kostur.setSmooth(true);
 	bool narysowano[15];
@@ -49,10 +52,8 @@ int main()
 				oknoGlowne.draw(snake_s);
 				oknoGlowne.display();
 			}
-			if(Keyboard::isKeyPressed(Keyboard::D))
-			{
-				
-			}
+			if
+			
 		}
 		
 		
