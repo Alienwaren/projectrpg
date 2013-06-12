@@ -13,6 +13,16 @@ struct kostur
 	int atk;
 	double szyb_atk;
 	char nazwa[30];
-}rainbow_staff;
+}RAINBOW_STAFF;
+struct postac
+{
+	double zycie;
+	double obrazenia;
+	int str;
+	int AC;
+	float atk_spd;
+
+
+}GRACZ_1;
 
 #endif
